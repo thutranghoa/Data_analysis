@@ -28,7 +28,7 @@ search_field.send_keys(keyword_search)
 # Find property box to click
 dropdowns = driver.find_elements(By.TAG_NAME, "table") 
 time.sleep(1)
-WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[4]/div[2]/div[1]/table[2]/tbody/tr/td[1]/div[1]'))).click() # cha hieu lam, le ra chi can cai nay la du, nhung phai co 2 dong tren thi cai nay moi hoat dong
+WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[4]/div[2]/div[1]/table[2]/tbody/tr/td[1]/div[1]'))).click() 
 
 prp_dropdown = driver.find_elements(By.CSS_SELECTOR, 'tr')
 property_found = False
